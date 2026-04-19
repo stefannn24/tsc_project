@@ -275,22 +275,6 @@
 <wire x1="-0.75" y1="-1.5" x2="-0.75" y2="-1.4" width="0.2" layer="21" curve="180"/>
 <wire x1="-0.75" y1="-1.4" x2="-0.75" y2="-1.5" width="0.2" layer="21" curve="180"/>
 </package>
-<package name="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C0402" library_version="12">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="CPF0201D7K68C1_0201" library_version="4">
 <smd name="1" x="0" y="0.275" dx="0.35" dy="0.25" layer="1"/>
 <smd name="2" x="0" y="-0.275" dx="0.35" dy="0.25" layer="1"/>
@@ -2284,18 +2268,6 @@ IPC Nominal Density</description>
 <pin name="ASCL" x="0" y="0" length="middle"/>
 <pin name="SCX" x="0" y="-2.54" length="middle"/>
 </symbol>
-<symbol name="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C" library_version="3">
-<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
-<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
-<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<text x="0" y="2.54" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
-<text x="0" y="-5.08" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-</symbol>
 <symbol name="CPF0201D7K68C1_CPF0201D7K68C1" library_version="1">
 <wire x1="5.08" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
@@ -2946,26 +2918,6 @@ Source: &lt;a href="https://www.mouser.com/datasheet/2/783/BST-BMA423-DS000-1509
 <attribute name="MANUFACTURER_PART_NUMBER" value="BMA423" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="262-BMA423" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMA423?qs=HXFqYaX1Q2xC%252BSgeGoX3mg%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="24">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
-<gates>
-<gate name="G$1" symbol="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="C0402" package="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SPICEMODEL" value="NONE"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3779,6 +3731,738 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 </deviceset>
 </devicesets>
 </library>
+<library name="InkTime_v5" urn="urn:adsk.wipprod:fs.file:vf.birtyhFxSUisHCd2wUyXPg">
+<packages>
+<package name="NORDIC_NRF_2_RESC0603_N" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="-1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="0.7" x2="-1.6" y2="-0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="1.6" y2="-0.7" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0402_L" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.85" y1="-0.4" x2="0.85" y2="0.4" width="0.1" layer="39"/>
+<wire x1="0.85" y1="0.4" x2="-0.85" y2="0.4" width="0.1" layer="39"/>
+<wire x1="-0.85" y1="0.4" x2="-0.85" y2="-0.4" width="0.1" layer="39"/>
+<wire x1="-0.85" y1="-0.4" x2="0.85" y2="-0.4" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0201_L" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<smd name="2" x="0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.3" x2="0.5" y2="-0.3" width="0.1" layer="39"/>
+<wire x1="0.5" y1="-0.3" x2="0.5" y2="0.3" width="0.1" layer="39"/>
+<wire x1="0.5" y1="0.3" x2="-0.5" y2="0.3" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="0.3" x2="-0.5" y2="-0.3" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0201_M" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-0.355" y="0" dx="0.5" dy="0.55" layer="1"/>
+<smd name="2" x="0.355" y="0" dx="0.5" dy="0.55" layer="1"/>
+<text x="-0.4" y="1.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-0.5" x2="0.8" y2="0.5" width="0.1" layer="39"/>
+<wire x1="0.8" y1="0.5" x2="-0.8" y2="0.5" width="0.1" layer="39"/>
+<wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.1" layer="39"/>
+<wire x1="-0.8" y1="-0.5" x2="0.8" y2="-0.5" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0201_N" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.305" y="0" dx="0.4" dy="0.45" layer="1"/>
+<smd name="2" x="0.305" y="0" dx="0.4" dy="0.45" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.65" y1="-0.35" x2="0.65" y2="0.35" width="0.1" layer="39"/>
+<wire x1="0.65" y1="0.35" x2="-0.65" y2="0.35" width="0.1" layer="39"/>
+<wire x1="-0.65" y1="0.35" x2="-0.65" y2="-0.35" width="0.1" layer="39"/>
+<wire x1="-0.65" y1="-0.35" x2="0.65" y2="-0.35" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0402_M" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-0.6" y="0" dx="0.7" dy="0.7" layer="1"/>
+<smd name="2" x="0.6" y="0" dx="0.7" dy="0.7" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="1.15" y1="-0.55" x2="1.15" y2="0.55" width="0.1" layer="39"/>
+<wire x1="1.15" y1="0.55" x2="-1.15" y2="0.55" width="0.1" layer="39"/>
+<wire x1="-1.15" y1="0.55" x2="-1.15" y2="-0.55" width="0.1" layer="39"/>
+<wire x1="-1.15" y1="-0.55" x2="1.15" y2="-0.55" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0402_N" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="-0.6" y="1.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.7" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="1" y1="-0.45" x2="1" y2="0.45" width="0.1" layer="39"/>
+<wire x1="1" y1="0.45" x2="-1" y2="0.45" width="0.1" layer="39"/>
+<wire x1="-1" y1="0.45" x2="-1" y2="-0.45" width="0.1" layer="39"/>
+<wire x1="-1" y1="-0.45" x2="1" y2="-0.45" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0603_L" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.7" y="0" dx="0.85" dy="0.8" layer="1"/>
+<smd name="2" x="0.7" y="0" dx="0.85" dy="0.8" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-0.5" x2="1.25" y2="0.5" width="0.1" layer="39"/>
+<wire x1="1.25" y1="0.5" x2="-1.25" y2="0.5" width="0.1" layer="39"/>
+<wire x1="-1.25" y1="0.5" x2="-1.25" y2="-0.5" width="0.1" layer="39"/>
+<wire x1="-1.25" y1="-0.5" x2="1.25" y2="-0.5" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0603_M" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.9" y="0" dx="1.25" dy="1" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="1.25" dy="1" layer="1"/>
+<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="2" y1="-1" x2="2" y2="1" width="0.1" layer="39"/>
+<wire x1="2" y1="1" x2="-2" y2="1" width="0.1" layer="39"/>
+<wire x1="-2" y1="1" x2="-2" y2="-1" width="0.1" layer="39"/>
+<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0805_L" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-1" y="0" dx="1" dy="1.25" layer="1"/>
+<smd name="2" x="1" y="0" dx="1" dy="1.25" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="39"/>
+<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0805_M" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-1.2" y="0" dx="1.4" dy="1.45" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1.4" dy="1.45" layer="1"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="2.4" y1="-1.2" x2="2.4" y2="1.2" width="0.1" layer="39"/>
+<wire x1="2.4" y1="1.2" x2="-2.4" y2="1.2" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="-1.2" x2="2.4" y2="-1.2" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_2_RESC0805_N" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-1.1" y="0" dx="1.2" dy="1.35" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.2" dy="1.35" layer="1"/>
+<text x="-1" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.85" y1="-0.95" x2="1.85" y2="0.95" width="0.1" layer="39"/>
+<wire x1="1.85" y1="0.95" x2="-1.95" y2="0.95" width="0.1" layer="39"/>
+<wire x1="-1.95" y1="0.95" x2="-1.95" y2="-0.95" width="0.1" layer="39"/>
+<wire x1="-1.95" y1="-0.95" x2="1.85" y2="-0.95" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0603_N" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="1.05" dy="0.9" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="-1.6" y2="0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="0.7" x2="-1.6" y2="-0.7" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="1.6" y2="-0.7" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0201_L" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<smd name="2" x="0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
+<text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.3" x2="0.5" y2="-0.3" width="0.1" layer="39"/>
+<wire x1="0.5" y1="-0.3" x2="0.5" y2="0.3" width="0.1" layer="39"/>
+<wire x1="0.5" y1="0.3" x2="-0.5" y2="0.3" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="0.3" x2="-0.5" y2="-0.3" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0201_M" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-0.355" y="0" dx="0.5" dy="0.55" layer="1"/>
+<smd name="2" x="0.355" y="0" dx="0.5" dy="0.55" layer="1"/>
+<text x="-0.4" y="1.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-0.5" x2="0.8" y2="0.5" width="0.1" layer="39"/>
+<wire x1="0.8" y1="0.5" x2="-0.8" y2="0.5" width="0.1" layer="39"/>
+<wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.1" layer="39"/>
+<wire x1="-0.8" y1="-0.5" x2="0.8" y2="-0.5" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0201_N" library_version="1">
+<description>&lt;b&gt;0201&lt;/b&gt; chip&lt;p&gt;
+0201 (imperial)&lt;br/&gt;
+0603 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.305" y="0" dx="0.4" dy="0.45" layer="1"/>
+<smd name="2" x="0.305" y="0" dx="0.4" dy="0.45" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="0.3" y2="-0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="-0.3" y2="0.15" width="0.1" layer="51"/>
+<wire x1="0.65" y1="-0.35" x2="0.65" y2="0.35" width="0.1" layer="39"/>
+<wire x1="0.65" y1="0.35" x2="-0.65" y2="0.35" width="0.1" layer="39"/>
+<wire x1="-0.65" y1="0.35" x2="-0.65" y2="-0.35" width="0.1" layer="39"/>
+<wire x1="-0.65" y1="-0.35" x2="0.65" y2="-0.35" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0402_L" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.85" y1="-0.4" x2="0.85" y2="0.4" width="0.1" layer="39"/>
+<wire x1="0.85" y1="0.4" x2="-0.85" y2="0.4" width="0.1" layer="39"/>
+<wire x1="-0.85" y1="0.4" x2="-0.85" y2="-0.4" width="0.1" layer="39"/>
+<wire x1="-0.85" y1="-0.4" x2="0.85" y2="-0.4" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0402_M" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-0.6" y="0" dx="0.7" dy="0.7" layer="1"/>
+<smd name="2" x="0.6" y="0" dx="0.7" dy="0.7" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="1.15" y1="-0.55" x2="1.15" y2="0.55" width="0.1" layer="39"/>
+<wire x1="1.15" y1="0.55" x2="-1.15" y2="0.55" width="0.1" layer="39"/>
+<wire x1="-1.15" y1="0.55" x2="-1.15" y2="-0.55" width="0.1" layer="39"/>
+<wire x1="-1.15" y1="-0.55" x2="1.15" y2="-0.55" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0402_N" library_version="1">
+<description>&lt;b&gt;0402&lt;/b&gt; chip &lt;p&gt;
+
+0402 (imperial)&lt;br/&gt;
+1005 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="-0.6" y="1.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.7" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="1" y1="-0.45" x2="1" y2="0.45" width="0.1" layer="39"/>
+<wire x1="1" y1="0.45" x2="-1" y2="0.45" width="0.1" layer="39"/>
+<wire x1="-1" y1="0.45" x2="-1" y2="-0.45" width="0.1" layer="39"/>
+<wire x1="-1" y1="-0.45" x2="1" y2="-0.45" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0603_L" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.7" y="0" dx="0.85" dy="0.8" layer="1"/>
+<smd name="2" x="0.7" y="0" dx="0.85" dy="0.8" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-0.5" x2="1.25" y2="0.5" width="0.1" layer="39"/>
+<wire x1="1.25" y1="0.5" x2="-1.25" y2="0.5" width="0.1" layer="39"/>
+<wire x1="-1.25" y1="0.5" x2="-1.25" y2="-0.5" width="0.1" layer="39"/>
+<wire x1="-1.25" y1="-0.5" x2="1.25" y2="-0.5" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0603_M" library_version="1">
+<description>&lt;b&gt;0603&lt;/b&gt; chip &lt;p&gt;
+
+0603 (imperial)&lt;br/&gt;
+1608 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-0.9" y="0" dx="1.25" dy="1" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="1.25" dy="1" layer="1"/>
+<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="2" y1="-1" x2="2" y2="1" width="0.1" layer="39"/>
+<wire x1="2" y1="1" x2="-2" y2="1" width="0.1" layer="39"/>
+<wire x1="-2" y1="1" x2="-2" y2="-1" width="0.1" layer="39"/>
+<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0805_L" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC High Density</description>
+<smd name="1" x="-1" y="0" dx="1" dy="1.25" layer="1"/>
+<smd name="2" x="1" y="0" dx="1" dy="1.25" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.1" layer="39"/>
+<wire x1="1.6" y1="0.75" x2="-1.6" y2="0.75" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="0.75" x2="-1.6" y2="-0.75" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0805_M" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC Low Density</description>
+<smd name="1" x="-1.2" y="0" dx="1.4" dy="1.45" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1.4" dy="1.45" layer="1"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="2.4" y1="-1.2" x2="2.4" y2="1.2" width="0.1" layer="39"/>
+<wire x1="2.4" y1="1.2" x2="-2.4" y2="1.2" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="-1.2" x2="2.4" y2="-1.2" width="0.1" layer="39"/>
+</package>
+<package name="NORDIC_NRF_3_RESC0805_N" library_version="1">
+<description>&lt;b&gt;0805&lt;/b&gt;chip&lt;p&gt;
+
+0805 (imperial)&lt;br/&gt;
+2012 (metric)&lt;br/&gt;
+IPC Nominal Density</description>
+<smd name="1" x="-1.1" y="0" dx="1.2" dy="1.35" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.2" dy="1.35" layer="1"/>
+<text x="-1" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.85" y1="-0.95" x2="1.85" y2="0.95" width="0.1" layer="39"/>
+<wire x1="1.85" y1="0.95" x2="-1.95" y2="0.95" width="0.1" layer="39"/>
+<wire x1="-1.95" y1="0.95" x2="-1.95" y2="-0.95" width="0.1" layer="39"/>
+<wire x1="-1.95" y1="-0.95" x2="1.85" y2="-0.95" width="0.1" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NORDIC_NRF_2_L-US" library_version="1">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="NORDIC_NRF_3_C-EU" library_version="1">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NORDIC_NRF_2_INDUCTOR" uservalue="yes" library_version="1">
+<description>&lt;b&gt;Generic chip inductor&lt;/b&gt;</description>
+<gates>
+<gate name="L$1" symbol="NORDIC_NRF_2_L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0402_L" package="NORDIC_NRF_2_RESC0402_L">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201_L" package="NORDIC_NRF_2_RESC0201_L">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201_M" package="NORDIC_NRF_2_RESC0201_M">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201_N" package="NORDIC_NRF_2_RESC0201_N">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402_M" package="NORDIC_NRF_2_RESC0402_M">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402_N" package="NORDIC_NRF_2_RESC0402_N">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_L" package="NORDIC_NRF_2_RESC0603_L">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_M" package="NORDIC_NRF_2_RESC0603_M">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_N" package="NORDIC_NRF_2_RESC0603_N">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_L" package="NORDIC_NRF_2_RESC0805_L">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_M" package="NORDIC_NRF_2_RESC0805_M">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_N" package="NORDIC_NRF_2_RESC0805_N">
+<connects>
+<connect gate="L$1" pin="1" pad="1"/>
+<connect gate="L$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NORDIC_NRF_3_CAPACITOR" uservalue="yes" library_version="1">
+<description>&lt;b&gt;Generic chip capacitor&lt;/b&gt;</description>
+<gates>
+<gate name="C$1" symbol="NORDIC_NRF_3_C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0201_L" package="NORDIC_NRF_3_RESC0201_L">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201_M" package="NORDIC_NRF_3_RESC0201_M">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0201_N" package="NORDIC_NRF_3_RESC0201_N">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402_L" package="NORDIC_NRF_3_RESC0402_L">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402_M" package="NORDIC_NRF_3_RESC0402_M">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402_N" package="NORDIC_NRF_3_RESC0402_N">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_L" package="NORDIC_NRF_3_RESC0603_L">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_M" package="NORDIC_NRF_3_RESC0603_M">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_N" package="NORDIC_NRF_3_RESC0603_N">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_L" package="NORDIC_NRF_3_RESC0805_L">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_M" package="NORDIC_NRF_3_RESC0805_M">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805_N" package="NORDIC_NRF_3_RESC0805_N">
+<connects>
+<connect gate="C$1" pin="1" pad="1"/>
+<connect gate="C$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3795,7 +4479,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="IC1" library="InkTime_v5" deviceset="BQ25180YBGR_BQ25180YBGR" device="" value="BQ25180YBGR"/>
 <part name="U1" library="InkTime_v5" deviceset="NORDIC_NRF_4_NRF52840_QF" device="" value="NRF52840_QF"/>
 <part name="J2" library="InkTime_v5" deviceset="TC2030-IDC_TC2030-IDC" device=""/>
-<part name="IC3" library="InkTime_v5" deviceset="BMA423_BMA423" device=""/>
+<part name="IC3" library="InkTime_v5" deviceset="BMA423_BMA423" device="" value="BMA421">
+<attribute name="ARROW_PART_NUMBER" value="BMA421"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="BMA421"/>
+<attribute name="MOUSER_PART_NUMBER" value="262-BMA421"/>
+</part>
 <part name="R9" library="InkTime_v5" deviceset="CPF0201D7K68C1_CPF0201D7K68C1" device="" value="10k"/>
 <part name="SUPPLY20" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="SUPPLY22" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
@@ -3848,7 +4536,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="SUPPLY9" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="X1" library="InkTime_v5" deviceset="NORDIC_NRF_XTAL_32MHZ" device="" value="32MHZ"/>
 <part name="SUPPLY10" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
-<part name="L2" library="InkTime_v5" deviceset="NORDIC_NRF_2_INDUCTOR" device="_0402_L" value="10uH"/>
+<part name="L2" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.birtyhFxSUisHCd2wUyXPg" deviceset="NORDIC_NRF_2_INDUCTOR" device="_0603_N" value="10uH"/>
 <part name="L3" library="InkTime_v5" deviceset="NORDIC_NRF_2_INDUCTOR" device="_0402_L" value="15nH"/>
 <part name="L1" library="InkTime_v5" deviceset="NORDIC_NRF_2_INDUCTOR" device="_0402_L" value="3.9nH"/>
 <part name="SUPPLY11" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
@@ -3856,7 +4544,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="SUPPLY13" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="L5" library="InkTime_v5" deviceset="ESP32_C6_LIBRARY_2_744043680" device="IND_4828-WE-TPC_WRE" value="68uH"/>
 <part name="SUPPLY2" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
-<part name="C2-EP-DR" library="InkTime_v5" deviceset="ESP32_C6_LIBRARY_1_ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="4.7uF/25V"/>
+<part name="C2-EP-DR" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0603_N" value="4.7uF/25V"/>
 <part name="D4" library="InkTime_v5" deviceset="ESP32_C6_LIBRARY_5_MBR0530" device="" value="MBR0530"/>
 <part name="D2" library="InkTime_v5" deviceset="ESP32_C6_LIBRARY_5_MBR0530" device="" value="MBR0530"/>
 <part name="D5" library="InkTime_v5" deviceset="ESP32_C6_LIBRARY_5_MBR0530" device="" value="MBR0530"/>
@@ -3889,7 +4577,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="SUPPLY43" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="SUPPLY44" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="SUPPLY45" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
-<part name="C27" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="0.1uF"/>
+<part name="C27" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="0.1uF"/>
 <part name="SUPPLY46" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="TP_VBAT" library="InkTime_v5" deviceset="HECTOR_WATCH_1_TP" device="TP20R"/>
 <part name="TP_BAT_GND" library="InkTime_v5" deviceset="HECTOR_WATCH_1_TP" device="TP20R"/>
@@ -3914,18 +4602,18 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="SUPPLY53" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="SUPPLY54" library="InkTime_v5" deviceset="TUTORIAL---FUSION-360_GND-BAR" device="" value="GND"/>
 <part name="C38" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
-<part name="C39" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="10uF"/>
+<part name="C39" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.birtyhFxSUisHCd2wUyXPg" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0603_N" value="10uF"/>
 <part name="C37" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
 <part name="C24" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="10uF"/>
 <part name="C23" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="0.1uF"/>
-<part name="C25" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="22uF"/>
-<part name="C33" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="22uF"/>
+<part name="C25" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.birtyhFxSUisHCd2wUyXPg" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0603_N" value="22uF"/>
+<part name="C33" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.birtyhFxSUisHCd2wUyXPg" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0603_N" value="22uF"/>
 <part name="C5" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="100nF"/>
 <part name="C8" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="100nF"/>
 <part name="C7" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="100nF"/>
-<part name="C6" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
-<part name="C20" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
-<part name="C21" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
+<part name="C6" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="4.7uF"/>
+<part name="C20" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="4.7uF"/>
+<part name="C21" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="4.7uF"/>
 <part name="C15" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="1uF"/>
 <part name="C14" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="4.7uF"/>
 <part name="C18" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="12pF"/>
@@ -3942,7 +4630,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="C22" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="N.C."/>
 <part name="C9" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="820pF"/>
 <part name="C19" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0201_N" value="100nF"/>
-<part name="C26" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="10uF"/>
+<part name="C1-EP-DR" library="InkTime_v5" deviceset="NORDIC_NRF_3_CAPACITOR" device="_0402_N" value="10uF"/>
 <part name="R_PWR_EPD" library="InkTime_v5" deviceset="CPF0201D7K68C1_CPF0201D7K68C1" device="" value="10k"/>
 <part name="R2_EP_DR" library="InkTime_v5" deviceset="CPF0201D7K68C1_CPF0201D7K68C1" device="" value="10k"/>
 <part name="J4" library="InkTime_v5" deviceset="KH-TYPE-C-16P_KH-TYPE-C-16P" device="" value="KH-TYPE-C-16P"/>
@@ -4334,13 +5022,6 @@ IMU, SWD</text>
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="PMIC_IN" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="!INT"/>
-<wire x1="52.07" y1="238.76" x2="44.45" y2="238.76" width="0.1524" layer="91"/>
-<label x="44.45" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="VREG" class="1">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SYS"/>
@@ -4655,20 +5336,6 @@ IMU, SWD</text>
 <label x="106.68" y="125.73" size="1.27" layer="95" ratio="15" xref="yes"/>
 </segment>
 </net>
-<net name="MU_INT2" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="INT2"/>
-<wire x1="83.82" y1="44.45" x2="83.82" y2="49.53" width="0.1524" layer="91"/>
-<label x="83.82" y="49.53" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="MU_INT1" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="INT1"/>
-<wire x1="86.36" y1="44.45" x2="86.36" y2="49.53" width="0.1524" layer="91"/>
-<label x="86.36" y="49.53" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="SDO"/>
@@ -4796,12 +5463,22 @@ IMU, SWD</text>
 <wire x1="201.93" y1="167.64" x2="196.85" y2="167.64" width="0.1524" layer="91"/>
 <label x="196.85" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INT1"/>
+<wire x1="86.36" y1="44.45" x2="86.36" y2="49.53" width="0.1524" layer="91"/>
+<label x="86.36" y="49.53" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="IMU_INT2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P1.08@P2"/>
 <wire x1="201.93" y1="165.1" x2="196.85" y2="165.1" width="0.1524" layer="91"/>
 <label x="196.85" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INT2"/>
+<wire x1="83.82" y1="44.45" x2="83.82" y2="49.53" width="0.1524" layer="91"/>
+<label x="83.82" y="49.53" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="P1.09" class="0">
@@ -4821,6 +5498,11 @@ IMU, SWD</text>
 <pinref part="U1" gate="G$1" pin="P0.11@T2"/>
 <wire x1="201.93" y1="160.02" x2="196.85" y2="160.02" width="0.1524" layer="91"/>
 <label x="196.85" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="!INT"/>
+<wire x1="52.07" y1="238.76" x2="44.45" y2="238.76" width="0.1524" layer="91"/>
+<label x="44.45" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HAPTIC_EN" class="0">
@@ -4955,10 +5637,10 @@ IMU, SWD</text>
 <wire x1="24.13" y1="232.41" x2="24.13" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="24.13" y1="236.22" x2="52.07" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="24.13" y1="236.22" x2="13.97" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="236.22" x2="19.05" y2="236.22" width="0.1524" layer="91"/>
 <label x="19.05" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-<junction x="24.13" y="236.22"/>
 <pinref part="C38" gate="C$1" pin="1"/>
+<junction x="24.13" y="236.22"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VBUS@AD2"/>
@@ -5055,6 +5737,7 @@ IMU, SWD</text>
 <junction x="186.69" y="154.94"/>
 <wire x1="186.69" y1="154.94" x2="186.69" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="C6" gate="C$1" pin="1"/>
+<label x="167.64" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="VOUT_1"/>
@@ -5219,9 +5902,9 @@ IMU, SWD</text>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="L2" gate="L$1" pin="2"/>
 <wire x1="219.71" y1="232.41" x2="219.71" y2="234.95" width="0.1524" layer="91"/>
 <pinref part="L3" gate="L$1" pin="1"/>
+<pinref part="L2" gate="L$1" pin="2"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -5435,7 +6118,7 @@ Protection</text>
 <instance part="SUPPLY2" gate="G$1" x="15.24" y="194.31" smashed="yes">
 <attribute name="VALUE" x="15.24" y="191.77" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C2-EP-DR" gate="G$1" x="46.99" y="213.36" smashed="yes">
+<instance part="C2-EP-DR" gate="C$1" x="46.99" y="213.36" smashed="yes">
 <attribute name="NAME" x="59.436" y="215.519" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="59.436" y="210.439" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -5639,8 +6322,8 @@ Protection</text>
 <instance part="SUPPLY54" gate="G$1" x="345.44" y="121.92" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="345.44" y="119.38" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="C26" gate="C$1" x="15.24" y="205.74" smashed="yes">
-<attribute name="NAME" x="22.606" y="206.629" size="1.778" layer="95" rot="R180"/>
+<instance part="C1-EP-DR" gate="C$1" x="15.24" y="205.74" smashed="yes">
+<attribute name="NAME" x="30.226" y="206.629" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="23.876" y="201.549" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R_PWR_EPD" gate="G$1" x="153.67" y="181.61" smashed="yes" rot="R90">
@@ -5709,7 +6392,7 @@ Protection</text>
 <segment>
 <wire x1="15.24" y1="200.66" x2="15.24" y2="196.85" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="GND"/>
-<pinref part="C26" gate="C$1" pin="2"/>
+<pinref part="C1-EP-DR" gate="C$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="D4" gate="G$1" pin="K"/>
@@ -5933,18 +6616,17 @@ Protection</text>
 <wire x1="38.1" y1="214.63" x2="38.1" y2="204.47" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="204.47" x2="46.99" y2="204.47" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="204.47" x2="46.99" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="C2-EP-DR" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="204.47" x2="53.34" y2="204.47" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <junction x="38.1" y="214.63"/>
 <junction x="46.99" y="204.47"/>
 <wire x1="100.33" y1="232.41" x2="100.33" y2="227.33" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
+<pinref part="C2-EP-DR" gate="C$1" pin="2"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="C2-EP-DR" gate="G$1" pin="1"/>
 <wire x1="46.99" y1="215.9" x2="46.99" y2="219.71" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="219.71" x2="46.99" y2="227.33" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="227.33" x2="53.34" y2="227.33" width="0.1524" layer="91"/>
@@ -5952,6 +6634,7 @@ Protection</text>
 <wire x1="46.99" y1="219.71" x2="53.34" y2="219.71" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="D2" gate="G$1" pin="K"/>
+<pinref part="C2-EP-DR" gate="C$1" pin="1"/>
 </segment>
 </net>
 <net name="PREVGH" class="0">
@@ -6044,7 +6727,7 @@ Protection</text>
 <wire x1="15.24" y1="214.63" x2="15.24" y2="219.71" width="0.1524" layer="91"/>
 <label x="15.24" y="219.71" size="1.27" layer="95" rot="R90" xref="yes"/>
 <junction x="15.24" y="214.63"/>
-<pinref part="C26" gate="C$1" pin="1"/>
+<pinref part="C1-EP-DR" gate="C$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="15"/>
@@ -6419,6 +7102,11 @@ Protection</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports the association of 3D packages
