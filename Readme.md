@@ -8,16 +8,16 @@ Compute & Connectivity
 
 The system is driven by the nRF52840 SoC. It manages:
 
-I2C Bus: Used for communicating with the ultra-low-power IMU (Accelerometer).
-SPI Bus: Dedicated specifically to the E-paper display to ensure enough bandwidth for screen refreshes without interrupting other peripherals.
-USB: Routed directly to the nRF52840 for potential firmware flashing and USB-CDC communications.
-RF: A 50-ohm matched RF trace connects the MCU to a 2.4GHz Johanson SMD chip antenna for Bluetooth Low Energy (BLE) connectivity.
+- I2C Bus: Used for communicating with the ultra-low-power IMU (Accelerometer).
+- SPI Bus: Dedicated specifically to the E-paper display to ensure enough bandwidth for screen refreshes without interrupting other peripherals.
+- USB: Routed directly to the nRF52840 for potential firmware flashing and USB-CDC communications.
+- RF: A 50-ohm matched RF trace connects the MCU to a 2.4GHz Johanson SMD chip antenna for Bluetooth Low Energy (BLE) connectivity.
 
 Peripherals
 
-Display: A low-power E-paper display module. It retains the image without power, but to completely eliminate quiescent current from the display's internal logic during deep sleep, power gating techniques are considered.
-IMU: An accelerometer is used for hardware-level step counting and gesture recognition (e.g., wrist-tilt to wake), sending interrupts to the MCU to wake it from sleep.
-Haptics: A coin-style ERM shaker motor driven via a MOSFET and PWM signal provides haptic feedback to the user.
+- Display: A low-power E-paper display module. It retains the image without power, but to completely eliminate quiescent current from the display's internal logic during deep sleep, power gating techniques are considered.
+- IMU: An accelerometer is used for hardware-level step counting and gesture recognition (e.g., wrist-tilt to wake), sending interrupts to the MCU to wake it from sleep.
+- Haptics: A coin-style ERM shaker motor driven via a MOSFET and PWM signal provides haptic feedback to the user.
 
 During the layout and routing phases of the PCB, several specific design rules and constraints were strictly applied to ensure manufacturability and signal integrity:
 
