@@ -15,16 +15,16 @@ The system is driven by the nRF52840 SoC. It manages:
 
 Peripherals
 
-- Display: A low-power E-paper display module. It retains the image without power, but to completely eliminate quiescent current from the display's internal logic during deep sleep, power gating techniques are considered.
-- IMU: An accelerometer is used for hardware-level step counting and gesture recognition (e.g., wrist-tilt to wake), sending interrupts to the MCU to wake it from sleep.
-- Haptics: A coin-style ERM shaker motor driven via a MOSFET and PWM signal provides haptic feedback to the user.
+- Display: A low-power E-paper display module.
+- IMU: An accelerometer is used for hardware-level step counting.
+- Haptics
 
 During the layout and routing phases of the PCB, several specific design rules and constraints were strictly applied to ensure manufacturability and signal integrity:
 
-- Strict Top-Layer Placement: To comply with manufacturing assembly constraints, 100% of the components were placed exclusively on the Top layer.
-- Trace Width Constraints for Power: All power delivery networks (VCC, VBUS, 3V3, VBAT) were manually routed using a minimum trace width of 0.3mm. This ensures adequate current handling, especially during peak loads from the shaker motor. Data signals were routed at 0.15mm to allow high-density escapes from the BGA/aQFN packages.
-- Antenna Keepout Zone: The 2.4GHz SMD antenna was placed strictly on the outer edge of the PCB. A complete keepout area was enforced underneath the antenna on all layers (no copper, no ground planes, no traces) to prevent radiation attenuation. The RF feedline itself contains 0 vias.
-- Decoupling Proximity: All 100nF (0201 package) decoupling capacitors were placed as physically close to the nRF52840 and IMU power pins as mechanically possible to filter out high-frequency switching noise.
+- Strict top-layer placement: To comply with manufacturing assembly constraints, 100% of the components were placed exclusively on the Top layer.
+- Trace width constraints for power: All power delivery networks (VCC, VBUS, 3V3, VBAT) were manually routed using a minimum trace width of 0.3mm. This ensures adequate current handling, especially during peak loads from the shaker motor. Data signals were routed at 0.15mm.
+- Antenna keepout zone: The 2.4GHz SMD antenna was placed strictly on the outer edge of the PCB. A complete keepout area was enforced underneath the antenna on all layers.
+- Decoupling proximity: All 100nF (0201 package) decoupling capacitors were placed as physically close to the nRF52840 and IMU power pins as mechanically possible to filter out high-frequency switching noise.
 
 Note: All passive resistors and standard capacitors are 0201 packages to maximize board density, unless dictated otherwise by voltage/power ratings (e.g., 0402/0603 for main DC/DC passives).
 Qty	Component	Device / Package	Description	Product Link
