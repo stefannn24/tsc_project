@@ -26,18 +26,6 @@ During the layout and routing phases of the PCB, several specific design rules a
 - Antenna keepout zone: The 2.4GHz SMD antenna was placed strictly on the outer edge of the PCB. A complete keepout area was enforced underneath the antenna on all layers.
 - Decoupling proximity: All 100nF (0201 package) decoupling capacitors were placed as physically close to the nRF52840 and IMU power pins as mechanically possible to filter out high-frequency switching noise.
 
-Note: All passive resistors and standard capacitors are 0201 packages to maximize board density, unless dictated otherwise by voltage/power ratings (e.g., 0402/0603 for main DC/DC passives).
-Qty	Component	Device / Package	Description	Product Link
-- 1	nRF52840-QIAA-R	aQFN-73	Microcontroller (BLE MCU)	JLC C209671
-- 1	2450AT18B100E	1206	2.4GHz RF Chip Antenna	JLC C16506
-- 1	USB-C Connector	16-Pin SMD	USB Type-C Receptacle	JLC C165948
-- 3	Tactile Switches	3.9x2.9mm SMD	Navigation Buttons	JLC C318884
-- 1	3.3V Regulator	DFN/WLCSP	DC/DC Buck-Boost / LDO	JLC C47134
-- 1	IMU / Accelerometer	LGA-12	Ultra-low power accelerometer	JLC C111244
-- 1	Battery Charger	SMD	Li-Po Charge Controller	JLC C12345
-- 1	E-Paper Display	1.54"	200x200px E-Ink Panel	N/A (External)
-- 1	Li-Po Battery	250mAh	3.7V Rechargeable Battery	N/A (External)
-- 1	Shaker Motor	ERM Coin	Vibration Haptic Motor	N/A (External)
 
 (The complete machine-readable .bom and .cpl files are located in the /Manufacturing directory).
 
